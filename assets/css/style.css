@@ -34,7 +34,7 @@ body {
 
 /* email game */
 
-#email_game {
+#palindromo {
 
   background-color: darkkhaki;
   justify-content: center;
@@ -54,7 +54,7 @@ body {
 /* /email_game */
 
 /* dice_game */
-#dice_game {
+#pari_dispari {
   background-color: darkslategray;
   justify-content: center;
   align-items: center;
