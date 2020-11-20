@@ -11,14 +11,26 @@
 
     function palindrome(string) {
 
-        var result = false;
-        if (string === string.split('').reverse().join('')) {
-           result = true;
-           console.log("The word is palindrome");
-        }
-        else {
-            console.log('The word is not palindrome');
-           }
+       return string.split('').reverse().join('');
+
+    }
+
+    console.log(userWord);
+    console.log(palindrome(userWord));
+    var result = document.getElementById("result");
+
+
+    if (userWord === palindrome(userWord)) {
+
+        
+        result.innerHTML = ('Your word is palindrome');
+
+    }
+
+    else {
+    
+        result.innerHTML = ('Your word is not palindrome');
+
     }
 
 
