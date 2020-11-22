@@ -1,41 +1,43 @@
+// 
+
 
 
 // PALINDROMA
 
-    // // Chiedere all’utente di inserire una parola
+    // Chiedere all’utente di inserire una parola
     
 
-    // var userWord = prompt("Inserisci una parola");
-    // //  Creare una funzione per capire se la parola inserita è palindroma
+    var userWord = prompt("Inserisci una parola");
+    //  Creare una funzione per capire se la parola inserita è palindroma
 
-    // /** La funzione determinera' se la string e' palindromo
-    //  * 
-    //  * @param {*} string - insert a string and check if it's palindrome word
-    //  * @return string - reversed (before we split the string into an array formed by each letter of the string then we reverse it, and for last we reform the string)
-    //  */
-    // function palindrome(string) {
+    /** La funzione determinera' se la string e' palindromo
+     * 
+     * @param {*} string - insert a string and check if it's palindrome word
+     * @return string - reversed (before we split the string into an array formed by each letter of the string then we reverse it, and for last we reform the string)
+     */
+    function palindrome(string) {
 
-    //    return string.split('').reverse().join('');
+       return string.split('').reverse().join('');
 
-    // }
+    }
 
-    // console.log(userWord);
-    // console.log(palindrome(userWord));
-    // var result_palindromo = document.getElementById("result_palindromo");
+    console.log(userWord);
+    console.log(palindrome(userWord));
+    var result_palindromo = document.getElementById("result_palindromo");
 
 
-    // if (userWord === palindrome(userWord)) {
+    if (userWord === palindrome(userWord)) {
 
         
-    //     result_palindromo.innerHTML = ('Your word is palindrome');
+        result_palindromo.innerHTML = ('Your word is palindrome');
 
-    // }
+    }
 
-    // else {
+    else {
     
-    //     result_palindromo.innerHTML = ('Your word is not palindrome');
+        result_palindromo.innerHTML = ('Your word is not palindrome');
 
-    // }
+    }
 
 
 // /PALINDROMA
@@ -48,7 +50,8 @@
 
 // L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
 
-var evenOddUser = prompt('Choose between Even or Odd').toUpperCase;
+var evenOddUser = prompt('Choose between Even or Odd');
+console.log(evenOddUser);
 
 var numberUser = Number(prompt('Insert a number between 1 and 5'))
 // console.log(numberUser);
@@ -89,17 +92,26 @@ function isEven(number){
     check = true;
 }
 
-
-return check;
-
-
+ return check;
 }
 
 
 var checkEvenOddSum = isEven(sum);
+
 console.log(checkEvenOddSum);
 
 // Dichiariamo chi ha vinto. 
+
+var winner = document.getElementById('winner').innerHTML;
+
+// ORA SE LA SOMMA E' PARI E L UTENTE SCRIVE EVEN VINCE
+if (((checkEvenOddSum) && (evenOddUser == "even")) || ((checkEvenOddSum == false) && (evenOddUser == 'odd'))) {
+    document.getElementById('winner').innerHTML = 'Player wins';
+}
+
+else {
+    document.getElementById('winner').innerHTML = 'IA wins'
+}
 
 
 // /PARI E DISPARI
