@@ -50,7 +50,7 @@
 
 // L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
 
-var evenOddUser = prompt('Choose between Even or Odd');
+var evenOddUser = prompt('Choose between Even or Odd').toUpperCase();
 console.log(evenOddUser);
 
 var numberUser = Number(prompt('Insert a number between 1 and 5'))
@@ -105,7 +105,7 @@ console.log(checkEvenOddSum);
 var winner = document.getElementById('winner').innerHTML;
 
 // ORA SE LA SOMMA E' PARI E L UTENTE SCRIVE EVEN VINCE
-if (((checkEvenOddSum) && (evenOddUser == "even")) || ((checkEvenOddSum == false) && (evenOddUser == 'odd'))) {
+if (((checkEvenOddSum) && (evenOddUser == "EVEN")) || ((checkEvenOddSum == false) && (evenOddUser == "ODD"))) {
     document.getElementById('winner').innerHTML = 'Player wins';
 }
 
