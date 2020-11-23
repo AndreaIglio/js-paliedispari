@@ -49,8 +49,8 @@ for (i= userWord.length - 1; i >= 0; i--){
     userWordReverse.push(userWord[i]);
 }
 
-console.log(userWordReverse.reverse().join(""));
-var userWordPalindrome = userWordReverse.reverse().join("");
+console.log(userWordReverse.join(""));
+var userWordPalindrome = userWordReverse.join("");
 
 
 
@@ -59,3 +59,25 @@ if (userWord == userWordPalindrome){
 }
 
 else (console.log('The word is not palindrome'))
+
+
+
+// 3rd METODO UTILIZZANDO LOOP
+
+// var userWord = prompt("Inserisci una parola");
+// var wordReverse = '';
+
+
+// for (i = userWord.length - 1; i >= 0; i--){
+// wordReverse += userWord[i];
+// }
+
+// console.log(wordReverse);
+
+
+// if (wordReverse == userWord){
+//     console.log('palindrome');
+// }
+// else {
+//     console.log('not palindrome');
+// }
