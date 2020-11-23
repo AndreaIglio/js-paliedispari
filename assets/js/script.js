@@ -104,7 +104,7 @@ console.log(checkEvenOddSum);
 
 var winner = document.getElementById('winner').innerHTML;
 
-// ORA SE LA SOMMA E' PARI E L UTENTE SCRIVE EVEN VINCE
+// ORA SE LA SOMMA E' PARI/DISPARI E L UTENTE SCRIVE EVEN/ODD VINCE
 if (((checkEvenOddSum) && (evenOddUser == "EVEN")) || ((checkEvenOddSum == false) && (evenOddUser == "ODD"))) {
     document.getElementById('winner').innerHTML = 'Player wins';
 }
