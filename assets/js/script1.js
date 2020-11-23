@@ -35,27 +35,27 @@
 // 2o METODO UTILIZZANDO FOR LOOP
 
 
-// var userWord = prompt("Inserisci una parola");
-// console.log(userWord);
+var userWord = prompt("Inserisci una parola");
+console.log(userWord);
 
-//   var userWordReverse = [];
+  var userWordReverse = [];
 
-// for (i= userWord.length; i >= 0; i--){
+for (i= userWord.length - 1; i >= 0; i--){
 
-//     userWord[i];
+    userWord[i];
 
-//     console.log(userWord[i]);
+    console.log(userWord[i]);
   
-//     userWordReverse.push(userWord[i]);
-// }
+    userWordReverse.push(userWord[i]);
+}
 
-// console.log(userWordReverse.reverse().join(""));
-// var userWordPalindrome = userWordReverse.reverse().join("");
+console.log(userWordReverse.reverse().join(""));
+var userWordPalindrome = userWordReverse.reverse().join("");
 
 
 
-// if (userWord == userWordPalindrome){
-//     console.log('The word is palindrome');
-// }
+if (userWord == userWordPalindrome){
+    console.log('The word is palindrome');
+}
 
-// else (console.log('The word is not palindrome'))
+else (console.log('The word is not palindrome'))
